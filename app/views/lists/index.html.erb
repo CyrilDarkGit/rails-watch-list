@@ -6,7 +6,7 @@
   <% @lists.each do |list| %>
     <%= render list %>
     <p>
-      <%= link_to "Show this list", list %>
+      <%= link_to "Show this list", list_bookmarks_path(list.id) %>
     </p>
   <% end %>
 </div>
